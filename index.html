@@ -464,26 +464,34 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
-            <div class="project-card relative p-6 rounded-xl bg-gray-800/50 border border-gray-700 card-hover-effect">
-                <div class="absolute -z-10 -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl opacity-0 group-hover:opacity-100 blur transition duration-300"></div>
-                <div class="relative z-10">
-                    <div class="w-full h-48 rounded-lg overflow-hidden mb-4">
-                        <img src="e-commerce.png" alt="Project 1" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">E-commerce website</h3>
-                    <p class="text-gray-400 mb-4">A modern website for e-commerce businesses with analytics and inventory management as shopify</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">React</span>
-                        <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">HTML and CSS3</span>
-                        <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">SQL</span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="" class="text-indigo-400 hover:text-indigo-300 transition-colors">
-                            <i class="fas fa-external-link-alt"></i> Live
-                        </a>
-                    </div>
-                </div>
-            </div>
+                        <div class="project-card relative p-6 rounded-xl bg-gray-800/50 border border-gray-700 card-hover-effect">
+    <div class="absolute -z-10 -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl opacity-0 group-hover:opacity-100 blur transition duration-300"></div>
+    <div class="relative z-10">
+        <div class="w-full h-48 rounded-lg overflow-hidden mb-4">
+            <img src="e-commerce.png" alt="Project 1" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-bold mb-2">E-commerce website</h3>
+        <p class="text-gray-400 mb-4">A modern website for e-commerce businesses with analytics and inventory management as shopify</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">React</span>
+            <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">HTML and CSS3</span>
+            <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-xs">SQL</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors" onclick="showNotHostedMessage()">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+function showNotHostedMessage() {
+    alert("This project is not currently hosted on the web.");
+    // Alternatively, you could use a more elegant notification system
+    // For example with Toastr, SweetAlert, or your own custom notification component
+}
+</script>
             
             <!-- Project 2 -->
             <div class="project-card relative p-6 rounded-xl bg-gray-800/50 border border-gray-700 card-hover-effect">
@@ -759,3 +767,4 @@
 </html>
 </body>
 </html>
+
